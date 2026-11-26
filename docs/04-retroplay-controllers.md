@@ -68,6 +68,8 @@ what the core expects. Check the core's page on the
 
 ## Step 3: Connect the controllers
 
+![Controller cheat sheet. 8BitDo SNES-style: USB-C in X-input mode, Bluetooth in D-input mode, or the USB receiver on 2.4G models; map it as Super Nintendo. Tribute64: 2.4 GHz receiver or USB-C, in PC mode; map it as Nintendo 64 with the C-buttons on the right stick. DualShock 4: Bluetooth (hold Share + PS) or a micro-USB data cable; map it as Default. GameCube-style pad for Switch: Bluetooth, USB, or an adapter in PC mode; map it as GameCube or Default. Map Kodi Default on every pad too, for the menus.](images/controllers.svg)
+
 ### General advice
 
 - **Wired (or a 2.4 GHz USB dongle) gives the lowest latency.** Bluetooth is

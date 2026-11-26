@@ -61,6 +61,8 @@ Containers can only see folders on the Pi 5's filesystem, so mount the NAS share
 on the host first. LibreELEC uses **systemd mount units** in
 `/storage/.config/system.d/`.
 
+![On the Pi 5, everything outside /storage is read-only or lost on reboot. The NAS share is mounted at /storage/nas/media by storage-nas-media.mount. The Jellyfin container sees it as /media (read-only), and keeps its own data in /storage/docker/jellyfin/config and /storage/docker/jellyfin/cache, mounted as /config and /cache. With host networking, Jellyfin answers at http://192.168.1.3:8096.](images/docker-storage.svg)
+
 The **file name must match the mount path** (`/` becomes `-`). For a mount at
 `/storage/nas/media`, the file is `storage-nas-media.mount`:
 

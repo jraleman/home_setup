@@ -4,6 +4,8 @@ Goal: a headless Pi Zero running [Pi-hole](https://pi-hole.net) as the DNS serve
 for the whole network. Every device, including the Kodi box, gets ads and trackers
 blocked without installing anything on it.
 
+![How Pi-hole works: (1) the router's DHCP tells each device to use 192.168.1.2 for DNS; (2) the device asks Pi-hole about every name it looks up; (3) a name on a blocklist, such as doubleclick.net, gets the answer 0.0.0.0 so the ad never loads, while any other name, such as raspberrypi.com, is looked up with an upstream DNS server (Cloudflare or Quad9) so the page loads. A secondary DNS server such as 8.8.8.8 would let devices skip Pi-hole.](images/pihole-dns.svg)
+
 ## Step 1: Flash Raspberry Pi OS Lite
 
 1. Open **Raspberry Pi Imager** on your computer.

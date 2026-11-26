@@ -1,9 +1,9 @@
 # home_setup
 
-Your guide to KODI and a proper home setup :)
+Your guide to KODI and a proper home entertainment setup :)
 
 A step-by-step guide to building a living-room entertainment system out of two
-Raspberry Pis: a **Kodi media center** that also plays retro games, and a tiny
+Raspberry Pi: a **Kodi media center** that also plays retro games, and a tiny
 **network-wide ad blocker**.
 
 ## What you end up with

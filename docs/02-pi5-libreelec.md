@@ -9,6 +9,8 @@ change lives under `/storage`.
 
 ## Step 1: Assemble the hardware
 
+![Raspberry Pi 5 seen from above, numbered to match the list below: (1) the Active Cooler over the middle of the board; (2) the PCIe ribbon connector on the left edge, for an optional M.2 HAT; (3) Ethernet in the bottom-right corner; (4) HDMI0, the micro-HDMI port next to the USB-C port, goes to the TV; (5) USB-C power in the bottom-left corner, plugged in last. HDMI1 isn't needed, and the microSD slot is under the left edge.](images/pi5-ports.svg)
+
 1. Fit the **Active Cooler** (or the case with the fan) before anything else.
 2. (Optional) Fit the M.2 HAT and NVMe SSD if you're using one.
 3. Connect **Ethernet**.

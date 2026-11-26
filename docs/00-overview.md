@@ -9,22 +9,7 @@ This guide builds a living-room entertainment system out of two Raspberry Pis:
 
 ## How it fits together
 
-```
-                    Internet
-                       │
-                 ┌─────┴─────┐
-                 │  Router   │  DHCP hands out Pi-hole as the DNS server
-                 └─────┬─────┘
-        ┌──────────────┼──────────────────────┐
-        │              │                      │
- ┌──────┴──────┐ ┌─────┴───────────────┐ ┌────┴──────────┐
- │ Pi Zero     │ │ Pi 5 (LibreELEC)    │ │ NAS / PC      │
- │ Pi-hole     │ │  Kodi + RetroPlayer │ │ SMB/NFS shares│
- │ DNS :53     │ │  Docker: Jellyfin   │ └───────────────┘
- │ Web /admin  │ │  HDMI ─► TV         │
- └─────────────┘ │  BT/USB ◄─ gamepads │
-                 └─────────────────────┘
-```
+![Network map: the router connects the Internet and every device at home, and its DHCP hands out the Pi-hole (192.168.1.2) as the DNS server. Below it sit the Pi Zero running Pi-hole (DNS on port 53, dashboard at /admin), the Pi 5 running LibreELEC with Kodi and RetroPlayer (web remote on port 8080) and Jellyfin in Docker (port 8096), and the NAS with SMB/NFS shares. The Pi 5 feeds the TV over HDMI0 and talks to the gamepads over Bluetooth or USB.](images/network-map.svg)
 
 Every device on the network asks the Pi-hole for DNS, so ads and trackers are
 blocked everywhere, including inside Kodi. The Pi 5 plays media from a NAS, from

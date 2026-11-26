@@ -10,6 +10,8 @@
 | **Game saves / save states** | Inside the LibreELEC backup. Or sync `/storage/.kodi/userdata/addon_data/game.libretro.*` with Syncthing. | — |
 | **Whole SD cards** | Optional: image each card with `dd` or Raspberry Pi Imager's backup tools. | Before risky changes |
 
+![Where backups go: export the Pi-hole settings with Teleporter after any change; copy the LibreELEC System and Kodi backup from /storage/backup/ through the Backup Samba share monthly and before major updates; stop the containers and copy /storage/docker/ monthly. Keep at least one copy off both Pis, on the NAS or a laptop, and optionally image each SD card before risky changes.](images/backups.svg)
+
 A good habit: keep at least one copy **off** both Pis (NAS or laptop).
 
 ## Monthly routine (10 minutes)

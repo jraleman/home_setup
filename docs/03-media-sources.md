@@ -12,6 +12,8 @@ You can use all three at once. Pick one *primary* way to browse your own
 library, either Kodi's library (A) or Jellyfin (B). Otherwise you'll have two
 copies of the same movies in the menus.
 
+![Three ways media reaches Kodi on the Pi 5. A: Kodi reads the NAS share over SMB or NFS into its own library. B: Jellyfin, running in Docker on the Pi 5, reads the same NAS files, and Kodi connects to it with Jellyfin for Kodi or JellyCon; Jellyfin also serves phones, laptops and other TVs. C: streaming add-ons from the official Kodi repository. Using A and B for the same files shows every movie twice.](images/media-sources.svg)
+
 ## Before you start: organise your files
 
 Kodi's scrapers (and Jellyfin's) match files by name. A predictable layout saves
